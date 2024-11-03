@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom Sidebar Styles */
+        .sidebar {
+            background-color: #cbcfdd;
+            width: 250px;
+            min-height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+        }
+        .sidebar .nav-link {
+            color: #372f2f;
+            font-weight: 500;
+        }
+        .sidebar .nav-link.active {
+            background-color: #007bff;
+            color: #efecf6;
+            border-radius: 5px;
+        }
+        .sidebar .section-title {
+            font-weight: bold;
+            color: #ac9c9c;
+            padding: 15px 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .sidebar .user-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .sidebar .user-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="d-flex">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <!-- User Info -->
+        <div class="user-info">
+            <img src="https://via.placeholder.com/50" alt="User">
+            <p>Welcome, Ibnu Haris Agam</p>
+            <small>Administrator</small>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+            </li>
+            <h6 class="section-title">
+                <i class="fas fa-bolt"></i> Menu Karyawan
+            </h6>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user"></i> Karyawan
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-briefcase"></i> Jabatan
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-sitemap"></i> Divisi
+                </a>
+            </li>
+            <h6 class="section-title">
+                <i class="fas fa-bolt"></i> Menu Absensi
+            </h6>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-calendar-check"></i> Absensi
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-envelope-open"></i> Izin
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-clock"></i> Lembur
+                </a>
+            </li>
+            <h6 class="section-title">
+                <i class="fas fa-bolt"></i> Menu Penggajian
+            </h6>
+        </ul>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="Content-area" 
+    style="margin-left: 300px;">
+        <h1 class="mt-4">Sistem Informasi Menejement Karyawan</h1>
+        <p>Admin Dashboard</p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
